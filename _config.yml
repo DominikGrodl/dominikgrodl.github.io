@@ -36,7 +36,7 @@ plugins:
   
 collections:
   # Define a collection named "docs", its documents reside in the "_docs" directory
-  docs:
+  posts:
     permalink: "/:collection/:path/"
     output: true
 
