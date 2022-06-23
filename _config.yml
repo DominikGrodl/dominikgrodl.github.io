@@ -30,9 +30,15 @@ twitter_username: Dominik_grodl
 github_username: DominikGrodl
 
 # Build settings
-theme: minima
+remote_theme: just-the-docs/just-the-docs
 plugins:
   - jekyll-feed
+  
+collections:
+  # Define a collection named "docs", its documents reside in the "_docs" directory
+  docs:
+    permalink: "/:collection/:path/"
+    output: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.
