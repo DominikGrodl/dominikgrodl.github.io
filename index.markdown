@@ -9,12 +9,12 @@ layout: home
 
 Welcome to my personal blog. My name is Dominik and I am an iOS developer localed in the Czech Republic. On this page, you can find my [posts](https://dominikgrodl.github.io/posts/) as well as some information about me like my [current projects]() and my [resume]()
 
-##posts
+## Latest posts
 
 <ul>
-  {% for post in site.posts %}
+  {% let i = 0; i < 2; i++ %}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
+      <a href="{{ site.posts[i].url }}">{{ site.posts[i].title }}</a>
     </li>
   {% endfor %}
 </ul>
