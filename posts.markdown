@@ -3,7 +3,6 @@ layout: page
 title: Posts
 permalink: /posts/
 nav_order: 2
-title: Title test
 ---
 
 <ul>
