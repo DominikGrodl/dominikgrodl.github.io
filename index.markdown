@@ -11,9 +11,10 @@ Welcome to my personal blog. My name is Dominik and I am an iOS developer locale
 ## [Latest posts](/posts/)
 
 <ul>
-  {% for post in site.posts limit:3 %}
+  {% for post in site.posts limit:10 %}
   <li>
    <a href="{{ post.url }}">{{ post.title }}</a>
+   {{ post.excerpt }}
   </li>
 {% endfor %}
 </ul>
