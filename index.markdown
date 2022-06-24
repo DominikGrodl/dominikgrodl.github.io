@@ -12,9 +12,7 @@ Welcome to my personal blog. My name is Dominik and I am an iOS developer locale
 ## Latest posts
 
 <ul>
-  {% let i = 0; i < 2; i++ %}
-    <li>
-      <a href="{{ site.posts[i].url }}">{{ site.posts[i].title }}</a>
-    </li>
-  {% endfor %}
+  {% for post in site.posts limit:2 %}
+   <a href="{{ post.url }}">{{ post.title }}</a>
+{% endfor %}
 </ul>
