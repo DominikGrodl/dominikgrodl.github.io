@@ -13,7 +13,7 @@ Welcome to my personal blog. My name is Dominik and I am an iOS developer locale
 <ul>
   {% for post in site.posts limit:10 %}
   <li>
-   <a href="{{ post.url }}">{{ post.title }}</a> {: .fs-9}
+   <a href="{{ post.url }}">{{ post.title {: .fs-9} }}</a>
    {{ post.excerpt }}
   </li>
 {% endfor %}
