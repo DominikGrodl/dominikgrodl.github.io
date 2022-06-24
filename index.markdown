@@ -1,9 +1,6 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: home
-title: Weelcome
+title: Welcome
 nav_order: 1
 ---
 
@@ -16,5 +13,6 @@ Welcome to my personal blog. My name is Dominik and I am an iOS developer locale
 <ul>
   {% for post in site.posts limit:2 %}
    <a href="{{ post.url }}">{{ post.title }}</a>
+  {{ post.excerpt }}
 {% endfor %}
 </ul>
